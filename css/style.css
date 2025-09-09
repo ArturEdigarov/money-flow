@@ -190,6 +190,8 @@ li, a{
     flex-direction: column;
     justify-content: space-between;
 
+    padding-bottom: 10px;
+    
     gap: 20px;
     width: clamp(157.5px, calc(var(--index) * 10), 315px);
     height: clamp(167.5px, calc(var(--index) * 10), 335px);
