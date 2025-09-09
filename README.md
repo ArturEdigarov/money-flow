@@ -2,7 +2,7 @@
 
 💸 GAROV: Money Flow — Personal Finance Manager
 
-GAROV is a web application for tracking income and expenses with personalized transactions, data visualization, and PWA support. Each user sees only their own data, and the interface is optimized for mobile devices and desktop.
+**GAROV** is a web application for tracking income and expenses with personalized transactions, data visualization, and PWA support. Each user sees only their own data, and the interface is optimized for mobile devices and desktop.
 
 Money Flow allows users to manage income and expenses, create personalized transactions, view transaction history, and analyze data using charts. PWA support ensures the app works without installation on smartphones, tablets, or computers.
 
@@ -17,7 +17,7 @@ Money Flow allows users to manage income and expenses, create personalized trans
 
 📁 Project Structure
 
-money-flow/
+```bash money-flow/
 ├── css/                # Styles
 ├── img/                # Images
 ├── script/             # Scripts
