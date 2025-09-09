@@ -14,10 +14,15 @@ Money Flow allows users to manage income and expenses, create personalized trans
 - **Hosting**: InfinityFree (online), MAMP (local)  
 - **Libraries**: Readbeams (database management), myChart (chart visualization)
 
+
+
  
 ## 🌐 Online Demo
 
 You can try the live version of Money Flow here: [https://artur-yediharov.great-site.net/](https://artur-yediharov.great-site.net/)
+
+
+
 
 
 
