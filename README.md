@@ -52,7 +52,6 @@ You can try the live version of Money Flow here: [https://artur-yediharov.great-
 Database structure:
   users — stores user information.
   transactions — stores income and expense transactions.
-  categories — categories for income and expenses.
 
   
 📱 PWA Support on iOS (Apple)
