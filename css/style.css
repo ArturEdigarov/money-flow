@@ -189,9 +189,6 @@ li, a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    padding-bottom: 10px;
-    
     gap: 20px;
     width: clamp(157.5px, calc(var(--index) * 10), 315px);
     height: clamp(167.5px, calc(var(--index) * 10), 335px);
@@ -199,6 +196,13 @@ li, a{
 
     border-radius: 15px;
 }
+
+@media(max-width: 600px){
+    .card{
+        padding-bottom: 10px;
+    }
+}
+
 .card-title {
     display: flex;
     justify-content: space-between;
