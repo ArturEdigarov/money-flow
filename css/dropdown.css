@@ -1,0 +1,56 @@
+.dropdown-button {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: left;
+    background-color: #000000;
+    color: var(--card-font-color);
+    border: none;
+    height: 40px;
+
+
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+
+    color: var(--card-font-color);
+    left: 0;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    list-style-type: none;
+    background-color: var(--second-color);
+    border-radius: 6px;
+    z-index: 1;
+}
+.dropdown-list__item {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+    border-top: 1px solid var(--cards-color);
+
+    color: var(--card-font-color);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 35px;
+}
+.dropdown-list__item:hover {
+    opacity: 0.7;
+}
+.dropdown-list--visible{
+    display: block;
+}

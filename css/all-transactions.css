@@ -1,0 +1,177 @@
+
+.transactions-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-color);
+    border-radius: 24px 24px 0px 0px;
+    min-height: 100vh;
+
+}
+.history_categorie-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.history_info-pocket {
+    display: flex;
+}
+.history-item__date{
+    color: #A0A0A0FF;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.transaction-history__item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 20px;
+    background-color: var(--cards-color);
+    border-radius: 15px;
+
+}
+.transaction-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+
+
+    height: 60px;
+}
+
+.history-item__name, .history-item__amount {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+    font-size: 16px;
+    font-weight: 300
+}
+.history-item__name {
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+
+}
+.history-item__amount {
+    color: #00C853FF;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.red-spending-color {
+    color: #D50000FF;
+}
+.history-navigarion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--index) * 3);
+}
+.history-item__button-delete, .history-item__button-edit{
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+.history-item__button-delete:hover, .history-item__button-edit:hover{
+    opacity: 0.3;
+}
+.history-item__button-edit, .history-item__button-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+.history-item__button-edit{
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+    border-right: 1px var(--cards-color) solid;
+}
+.history-item__button-delete{
+
+    border-radius: 0px 15px 15px 0px;
+    width: 80%;
+    width: 40%;
+}
+
+.edit-icon {
+    width: 80%;
+    height: 80%;
+}
+.history-button__pocket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.history-description{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    margin-bottom: calc(var(--index) * 2);
+    margin-top: calc(var(--index) * 2);
+}
+.description-name{
+    display: flex;
+    margin-left: 10px;
+    color: var(--card-font-color);
+    font-size: clamp(20px, calc(var(--index) * 0.8), 32px);
+}
+.transactions-history .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history-item__details{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease, padding 0.7s ease;
+    padding: 0;
+    background-color: var(--cards-color);
+    border-radius: 15px;
+    width: 90%;
+}
+.transaction-history__item.active .history-item__details {
+  max-height: 200px;     
+  padding: 10px;      
+}
+.details-comment{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.details-comment__title{
+    color: #A0A0A0FF;
+    font-size: 12px;
+}
+.details-delete__pocket{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.details-delete{
+    margin: auto;
+    margin-top: 10px;
+    background-color: #2C0B0BFF;
+    color: #FF3B30FF;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 50px;
+    width: 200px;
+    transition: 0.5s easy;
+}
+.details-delete:hover{
+    opacity: 0.7;
+}

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --text-color: #ffffff;
+    --button-color: linear-gradient(to right, #FA8305, #FB9E3C);
+    --second-color: #1A1A1A;
+    --cards-color: #313131;
+    --card-font-color: #D6D6D6;
+}
+
+
+body {
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1400px;
+}
+
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--index) * 1.5);
+}
+.header .container {
+    display: flex;
+    justify-content: center;
+}   
+ul, li, a {
+    color: var(--card-font-color);
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.header__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: calc(var(--index) * 1);
+    border-radius: 24px;
+    height: 35px;
+    width: 335px;
+    font-size: 12px;
+    
+    background-color: var(--second-color);
+}
+li, a{
+    font-weight: 500;
+    color: #767676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    background-color: var(--text-color);
+    color: #000000;
+}
+
+/* Diagram */
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    border-radius: 24px 24px 0 0;
+    background-color: var(--second-color);
+    flex: 1;
+}
+.diagram {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+
+}
+.diagram-title {
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--text-color);
+    font-size: clamp(20px, calc(var(--index) * 0.8), 32px);
+}
+.diagram-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: clamp(28px, calc(var(--index) * 0.8), 50px);
+}
+.diagram-main__pocket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.diagram-main__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+
+}
+.diagram-main__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diagram-main__list h3{
+    color: #929292;
+    margin-left: calc(var(--index) * 0.6);
+    font-weight: 500;
+}
+.diagram-main__list-kategorie{
+    font-size: clamp(12px, calc(var(--index) * 0.8), 24px);
+}
+.diagram-main__list div{
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-left: calc(var(--index) * 1);
+}
+.circle {
+  width: 12px;              
+  height: 12px;
+  border-radius: 50%;              
+}
+.red {
+    background-color: var(--background-red);
+}
+.green {
+    background-color: var(--background-green);
+}
+.blue {
+    background-color: var(--background-blue);
+}
+.orange {
+    background-color: var(--background-orange);
+}
+.violet {
+    background-color: var(--background-violet);
+}
+.yellow {
+    background-color: #FFE048;
+}
+.dark-green {
+    background-color: #0B6B3A;
+}
+.pink {
+    background-color: #E8A6C9;
+}
+
+
+.spend-cards {
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: calc(var(--index) * 2);
+    width: 100%;
+}
+.spend-cards .container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
+}
+.cards-pocket{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 20px;
+    width: clamp(157.5px, calc(var(--index) * 10), 315px);
+    height: clamp(167.5px, calc(var(--index) * 10), 335px);
+    background-color: var(--cards-color);
+
+    border-radius: 15px;
+}
+.card-title {
+    display: flex;
+    justify-content: space-between;
+
+    
+
+    padding-top: clamp(16px, calc(var(--index) * 1), 32px);
+    padding-left: clamp(16px, calc(var(--index) * 1), 32px);
+    padding-right: clamp(16px, calc(var(--index) * 1), 32px);
+}
+.card-title h2 {
+    font-size: clamp(16px, calc(var(--index) * 0.8), 32px);
+    font-weight: 500;
+
+    color: var(--card-font-color);
+}
+.card-title__amount{
+    font-size: clamp(8px, calc(var(--index) * 0.5), 16px);
+    font-weight: 400;
+    color: var(--card-font-color);
+}
+.card-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #585858;
+    width: clamp(20px, calc(var(--index) * 1), 40px);
+    height: clamp(20px, calc(var(--index) * 1), 40px);
+}
+.emoji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emoji-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(64px, calc(var(--index) * 2), 128px);
+    height: clamp(64px, calc(var(--index) * 2), 128px);
+
+    opacity: 1;
+/*    box-shadow: 
+    0 0 40px var(--background-red),  
+    inset 0 0 5px var(--background-red);  */
+    
+}
+.emoji-circle img {
+    width: clamp(64px, calc(var(--index) * 2), 128px);
+    height: clamp(64px, calc(var(--index) * 2), 128px);
+}
+.emoji-numbers__pocket{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.card-numbers{
+    width: 100%;
+    padding-bottom: clamp(16px, calc(var(--index) * 1), 32px);
+    display: flex;
+    justify-content: center;
+}
+.user-emoji{
+    font-size: 35px;
+}
+.card-numbers__sum {
+
+    font-size: clamp(23px, calc(var(--index) * 0.8), 46px);
+    font-weight: 700;
+    color: var(--card-font-color);
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+    bottom: 0;
+    margin-bottom: calc(var(--index) * 1);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    outline: none; 
+    
+    box-shadow: 0 0 40px var(--card-font-color);
+    width: 50px;
+    height: 50px;
+    
+    background-color: var(--card-font-color);
+
+}
+.footer:hover {
+    opacity: 0.7;
+}
+
+.footer-button__text{
+    font-size: 50px;
+    font-weight: 20;
+    color: var(--cards-color);
+}
+.form-comment_input {
+    display: flex;
+    text-align: end;
+
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: var(--card-font-color);
+}
+.form-text {
+    display: flex;
+    align-items: center;
+}
+.transactions-active {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: #000000;
+}
+
+.transaction-navigation{
+    margin-top: 20px;
+}
+.transaction__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.transaction-black{
+    background-color: var(--cards-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.account-spend__pocket{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--index) * 1);
+}
+.no-transactions {
+    color: #D6D6D6;
+    font-size: 16px;
+}

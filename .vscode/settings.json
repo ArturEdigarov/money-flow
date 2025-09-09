@@ -1,0 +1,24 @@
+{
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.fixes": false,
+    "editor.suggest.selectionMode": "never",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.autoClosingBrackets": "always",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+    "php": "html",
+    "plaintext": "html"
+    },
+    "editor.tabCompletion": "on",
+    "editor.autoClosingTags": "always",
+}
