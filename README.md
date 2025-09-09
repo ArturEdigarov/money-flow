@@ -33,7 +33,7 @@ Money Flow allows users to manage income and expenses, create personalized trans
 ├── payments.php        # Payments page
 ├── reg.php             # Registration
 ├── sign-in.php         # Sign-in
-└── sign-log.php        # Login logging
+└── sign-log.php        # Login logging ```
 
 🗄️ Database
 
